@@ -2,6 +2,18 @@
     <h1>Nuevo Item</h1>
 
     <%= form_with model: @item, local: true, class: 'new-item-form' do |form| %>
+      <% if @item.errors.any? %>
+        <div id="error_explanation" class="error-messages">
+          
+          <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
+          <ul>
+            <% @item.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
       <div class="form-group">
         <%= form.label :Nombre, class: 'form-label' %>
         <%= form.text_field :name, class: 'form-input' %>
