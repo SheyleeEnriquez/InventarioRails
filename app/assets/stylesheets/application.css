@@ -1,0 +1,182 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  font-family: Consolas, sans-serif;
+  background-color: aliceblue;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-family: Perpetua Titling MT, sans-serif;
+  font-size: 30px;
+  color: #333;
+  border-radius: 15px; 
+  padding: 20px;
+  background-color:#CEDFF3;
+  text-align: center;
+}
+
+.imagen_inventario {
+  display: block;
+  margin: 10px auto;
+  min-width: 165vh;
+  height: auto;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.inicio {
+  display: block;
+  margin: 10px auto;
+  min-width: 35vh;
+  height: auto;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*Estilos botones*/
+.nuevo_item,
+.btn_editar,
+.btn_borrar {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3494fa;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Maiandra GD, sans-serif;
+}
+.nuevo_item:hover {
+  background-color: #0056b3;
+}
+.acciones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.link_edit{
+    text-decoration: none;
+    color: black;
+}
+
+/*Estilo tablas*/
+.table_inventory{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.table_inventory th, .table_inventory td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.table_inventory th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    color: #333;
+}
+
+.table_inventory tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.table_inventory tr:hover {
+    background-color: #f1f1f1;
+}
+
+/*Estilos Ver producto creado*/
+
+.contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .descripcion{
+    font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  }
+  .cantidad{
+    font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  }
+  .action-link {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .action-link:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  /*Estilos Editar y Nuevo producto*/
+  .edit-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-input,
+  .form-textarea,
+  .form-submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .form-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-submit:hover {
+    background-color: #0056b3;
+  }
+

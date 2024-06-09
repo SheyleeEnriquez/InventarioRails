@@ -1,0 +1,7 @@
+<%= image_tag 'caja.gif', alt: 'Imagen de Inventario', class: 'imagen_inventario' %>
+
+<script>
+  setTimeout(function() {
+    window.location.href = '<%= url_for(controller: :items, action: :index) %>';
+  }, 12000); 
+</script>
